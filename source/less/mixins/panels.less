@@ -1,0 +1,16 @@
+@import '../variables.less';
+
+.panel-color-variant(@color: @text-color; @background: @color__gray-lighter;) {
+  border-color: darken(@background,10%);
+
+  & > .panel__heading{
+    background-color: @background;
+    font-size:@font-size;
+    color:@color;
+
+    &--center{
+      text-align:center;
+      text-transform: uppercase;
+    }
+  }
+}

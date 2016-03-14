@@ -1,0 +1,42 @@
+@import '../variables.less';
+
+.nav-bar{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &--md{
+    display:none;
+    justify-content: space-between;
+    @media (max-width: @screen-sm){
+      flex-direction: column;
+      margin-bottom: @spacer;
+    }
+  }
+  &--toggle{
+    display:none;
+    width:120px;
+    align-self: center;
+    border:1px solid @color__gray-light;
+    -webkit-border-radius: @border-radius;
+    -moz-border-radius: @border-radius;
+    border-radius: @border-radius;
+    @media (max-width: @screen-md){
+      display:flex;
+    }
+  }
+  &__image{
+    width:150px;
+  }
+  &__container{
+    display:flex;
+
+    @media (max-width: @screen-md){
+      flex-direction:column;
+      align-items: center;
+    }
+  }
+  @media (max-width: @screen-md){
+    padding:@spacer 0;
+  }
+}

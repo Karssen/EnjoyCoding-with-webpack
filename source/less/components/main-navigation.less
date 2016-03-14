@@ -1,0 +1,122 @@
+@import '../variables.less'; // Можно удалять, это только для удобства написания кода.
+
+//------------------------------------------------------------------------------
+//  Компонент главного меню
+//------------------------------------------------------------------------------
+
+/*
+        <nav class="main-navigation">
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item"><a class="main-navigation__link" href="#">Пункт меню 1</a></li>
+                <li class="main-navigation__item"><a class="main-navigation__link" href="#">Пункт меню 2</a></li>
+                <li class="main-navigation__item dropdown-item">
+                    <a class="main-navigation__link" href="#">Пункт меню 3
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">1</a></li>
+                        <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">2</a></li>
+                        <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">3</a></li>
+                    </ul>
+                </li>
+                <li class="main-navigation__item"><a class="main-navigation__link" href="#">Пункт меню 4</a></li>
+                <li class="main-navigation__item"><a class="main-navigation__link" href="#">Пункт меню 5</a></li>
+            </ul>
+        </nav>
+
+*/
+
+.main-navigation{
+  width:100%;
+
+  &__list{
+    .nav-list();
+
+    @media (max-width: @screen-md){
+      flex-direction:column;
+      align-items: center;
+    }
+  }
+
+  &__item{
+    //flex-grow:1;
+    margin-right: @spacer/2;
+
+    @media (max-width: @screen-md){
+      width:50%;
+      margin-right:0;
+      margin-bottom: @spacer/2;
+      -webkit-border-radius: @border-radius;
+      -moz-border-radius: @border-radius;
+      border-radius: @border-radius;padding-top: @spacer/2;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+  }
+
+  &__link{
+    .nav-link();
+    .btn-menu-color(@color__primary; #fff; #e7e7e7);
+    -webkit-border-radius: 0 0 @border-radius @border-radius;
+    -moz-border-radius: 0 0 @border-radius @border-radius;
+    border-radius: 0 0 @border-radius @border-radius;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: @font-size;
+
+    @media (max-width: @screen-md){
+      -webkit-border-radius: @border-radius;
+      -moz-border-radius: @border-radius;
+      border-radius: @border-radius;
+      padding-top: @spacer/2;
+    }
+  }
+
+}
+
+
+.dropdown-item{
+  position:relative;
+
+  &  .caret{
+    .caret();
+  }
+
+}
+
+.dropdown-menu {
+  .nav-list();
+  .drop-menu();
+
+  &.open{
+    display:flex;
+  }
+
+  &--right{
+    left:100%;
+    top:-@spacer/2;
+  }
+
+  &__item {
+    margin: 0 0 @spacer/2 0;
+  }
+
+  &__item:last-child {
+    margin: 0;
+  }
+
+  &__item:first-child {
+    margin: @spacer/2 0 @spacer/2 0;
+  }
+
+  &__link{
+    .nav-link();
+    .btn-menu-color(#fff; lighten(@color__primary,20%); transparent);
+  }
+}

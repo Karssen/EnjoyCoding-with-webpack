@@ -1,0 +1,25 @@
+@import '../variables.less';
+
+.main-form{
+  display:flex;
+  flex-direction:column;
+
+  &__login, &__password,&__name, &__email,&__message{
+    .input();
+  }
+
+  &__submit{
+    align-self: flex-end;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    .btn-primary();
+    margin-bottom:0;
+  }
+
+  &--invisible{
+    .sr-only();
+  }
+}

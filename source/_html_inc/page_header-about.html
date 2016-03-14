@@ -1,0 +1,138 @@
+<header class="page-header">
+    <div class="container">
+        <div class="row row--large page-header--md">
+            <div class="col-xs-5 hidden-md">
+                <div class="main-logo main-logo--skew">
+                    <div class="main-logo--skew-backwards">
+                        <a class="main-logo__link" href="#">
+                            <img class="main-logo__image" src="../img/logo/logo.svg" alt="EnjoyCoding"/>
+                        <span class="main-logo__name">EnjoyCoding
+                            <br>
+                            <i class="main-logo__slogan">научиться может каждый</i>
+                        </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-7 flexible main-login">
+                <div class="main-login__container">
+                    <div class="main-login__enter">
+                        <a class="main-login__link" href="#modal-1" data-role="modal-open"><span class="fa fa-sign-in"></span>Вход</a>
+                    </div>
+                    <div class="main-login__register">
+                        <a class="main-login__link" href="#modal-2" data-role="modal-open"><span class="fa fa-pencil"></span>Регистрация</a>
+                    </div>
+                    <div id="modal-1" class="modal">
+                        <div class="modal__container">
+                            <header class="modal__header">
+                                <span>Войти</span>
+                            </header>
+                            <div class="modal__content">
+                                <form action="#" class="main-form">
+                                    <div>
+                                        <label for="main-login" class="main-form--invisible">Ваш логин</label>
+                                        <input type="text" name="footer-login" id="main-login" class="main-form__login" placeholder="Ваш логин"/>
+                                    </div>
+                                    <div>
+                                        <label for="main-password" class="main-form--invisible">Ваш пароль</label>
+                                        <input type="text" name="main-password" id="main-password" class="main-form__password" placeholder="Ваш пароль"/>
+                                    </div>
+                                    <div class="field  field--checkbox">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="field__label">Запомнить</span>
+                                        </label>
+                                    </div>
+                                    <input class="main-form__submit" type="button" value="Войти"/>
+                                </form>
+                            </div>
+                            <a href="#" class="modal__close" data-role="modal-close"><span class="fa fa-times"></span></a>
+                        </div>
+                    </div>
+                    <div id="modal-2" class="modal">
+                        <div class="modal__container">
+                            <header class="modal__header">
+                                <span>Регистрация</span>
+                            </header>
+                            <div class="modal__content">
+                                <form action="#" class="main-form">
+                                    <div>
+                                        <label for="register-name" class="main-form--invisible">Ваше имя</label>
+                                        <input type="text" name="register-name" id="register-name" class="main-form__login" placeholder="Ваш логин"/>
+                                    </div>
+                                    <div>
+                                        <label for="register-email" class="main-form--invisible">Ваш логин</label>
+                                        <input type="text" name="register-email" id="register-email" class="main-form__email" placeholder="Ваш email"/>
+                                    </div>
+                                    <div>
+                                        <label for="register-password" class="main-form--invisible">Ваш пароль</label>
+                                        <input type="text" name="register-password" id="register-password" class="main-form__password" placeholder="Ваш пароль"/>
+                                    </div>
+                                    <div>
+                                        <label for="repeat-password" class="main-form--invisible">Повторите пароль</label>
+                                        <input type="text" name="repeat-password" id="repeat-password" class="main-form__password" placeholder="Повторите пароль"/>
+                                    </div>
+                                    <div class="field  field--checkbox">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="field__label">Получать рассылку</span>
+                                        </label>
+                                    </div>
+                                    <input class="main-form__submit" type="button" value="Войти"/>
+                                </form>
+                            </div>
+                            <a href="#" class="modal__close" data-role="modal-close"><span class="fa fa-times"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="nav-bar" id="nav-bar">
+                        <div class="nav-bar--md visible-md">
+                            <div class="main-logo">
+                                <a class="main-logo__link" href="#">
+                                    <img class="main-logo__image" src="../img/logo/logo.svg" alt="EnjoyCoding"/>
+                                    <span class="main-logo__name">EnjoyCoding
+                                        <br>
+                                        <i class="main-logo__slogan">научиться может каждый</i>
+                                    </span>
+                                </a>
+                            </div>
+                            <button class="nav-bar--toggle" data-target="nav-bar__container">
+                                <img src="../img/menu/logo-menu.svg" alt="Menu" class="nav-bar__image"/>
+                            </button>
+                        </div>
+
+
+                        <div class="nav-bar__container" id="nav-bar__container" data-expand="false">
+                            <nav class="main-navigation">
+                                <ul class="main-navigation__list">
+                                    <li class="main-navigation__item"><a href="index.html" class="main-navigation__link main-navigation__link--active"><span class="fa fa-home"></span> Главная</a></li>
+                                    <li class="main-navigation__item"><a href="about.html" class="main-navigation__link"><span class="fa fa-book"></span> О проекте</a></li>
+                                    <li class="main-navigation__item"><a href="lessons.html" class="main-navigation__link"><span class="fa fa-folder-open-o"></span> Уроки и статьи</a></li>
+                                    <li class="main-navigation__item"><a href="contacts.html" class="main-navigation__link"><span class="fa fa-map-o"></span> Контакты</a></li>
+                                </ul>
+                            </nav>
+
+
+                            <form action="#" class="page-search">
+                                <div class="page-search__group">
+                                    <input type="text" class="page-search__input"/>
+                                    <button  class="page-search__submit" type="submit">
+                                        <span class="fa fa-search scale"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

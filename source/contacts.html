@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>О проекте</title>
+    <meta name="description" content="">
+
+    @@include('_html_inc/page_head-contacts.html')
+
+</head>
+
+
+
+<body>
+@@include('_html_inc/page_header-about.html')
+
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-title">
+                    <h2 class="page-title__header">
+                            <span class="page-title__corner">
+                                Контактная информация
+                            </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-12">
+                    <div class="contact">
+                        <div class="contact__text">
+                            <div class="contact__info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate dolore
+                                    dolorem doloremque eius explicabo, illum in iste maxime mollitia nobis numquam
+                                    officiis possimus quae quas quo sapiente similique, ullam.
+                                </p>
+                            </div>
+                            <div class="contact__data">
+                                <p>
+                                    The Company Name Inc. <br/>
+                                    9870 St Vincent Place, <br/>
+                                    Glasgow, DC 45 Fr 45. <br/>
+                                    Telephone: <span class="contact__data-number">+1 800 603 6035</span>  <br/>
+                                    FAX: <span class="contact__data-number">+1 800 603 6035</span> <br/>
+                                    E-mail: <span class="contact__data-email">mail@demolink.org</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-form__wrapper">
+                            <h3 class="contact__header">Быстрое письмо</h3>
+                            <form action="#" class="contact-form" method="POST">
+                                <div class="contact-form__group">
+                                    <div class="contact-form__group--item">
+                                        <label for="contact-name" class="sr-only">Имя</label>
+                                        <input type="text" name="contact-name" id="contact-name" class="contact-form__group--input" placeholder="Имя"/>
+                                    </div>
+                                    <div class="contact-form__group--item">
+                                        <label for="contact-surname" class="sr-only">Фамилия</label>
+                                        <input type="text" name="contact-surname" id="contact-surname" class="contact-form__group--input" placeholder="Фамилия"/>
+                                    </div>
+                                    <div class="contact-form__group--item">
+                                        <label for="contact-email" class="sr-only">Email</label>
+                                        <input type="email" name="contact-email" id="contact-email" class="contact-form__group--input" placeholder="Email"/>
+                                    </div>
+                                </div>
+                                <div class="contact-form__body">
+                                    <textarea class="contact-form__body-textarea" name="contact-text" id="contact-text" rows="5"></textarea>
+                                </div>
+                                <div class="contact-form__footer">
+                                    <input class="contact-form__submit" type="submit"/>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </div>
+
+        <div class="row contact-map">
+            <div class="col-xs-12">
+                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=dpxEC7cY8fL5q7Tik0iA6aU9LNo9VaVa&width=100%&height=500&lang=ru_RU&sourceType=constructor"></script>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('_html_inc/page_footer.html')
+
+@@include('_html_inc/page_bottom.html')
+</body>
+</html>

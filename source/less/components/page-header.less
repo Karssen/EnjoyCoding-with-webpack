@@ -1,0 +1,25 @@
+@import '../variables.less';
+
+.page-header{
+    background-color: @color__primary;
+
+  &--md{
+    @media (max-width: @screen-md){
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.nav-container{
+  background-color: #fff;
+
+  @media (max-width: @screen-md){
+    background-color:@service_bg;
+  }
+}
+.slider-container{
+  @media (max-width: @screen-md){
+    padding-top:@spacer*2;
+  }
+}

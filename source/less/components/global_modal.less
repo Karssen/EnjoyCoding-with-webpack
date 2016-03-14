@@ -1,0 +1,54 @@
+@import '../variables.less';
+
+.modal{
+  display:none;
+  background-color: rgba(0,0,0, 0.6);
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:999;
+
+  &--show{
+    display:flex;
+  }
+  &__container{
+    visibility: hidden;
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    border:2px solid @color__gray-lighter-light;
+    -webkit-border-radius: @border-radius;
+    -moz-border-radius: @border-radius;
+    border-radius: @border-radius;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow:hidden;
+
+    &--small{
+      max-width:240px;
+    }
+  }
+  &__header{
+    padding:@spacer*2 @spacer*3 @spacer @spacer;
+    font-size: @font-size--h3;
+    border-bottom:1px solid @color__gray-lighter-light;
+    font-weight:500;
+  }
+  &__content{
+    padding:@spacer;
+  }
+  &__footer{
+    padding:@spacer;
+    border-top:1px solid @color__gray-lighter-light;
+  }
+  &__close{
+    position:absolute;
+    right:5px;
+    top:5px;
+  }
+}

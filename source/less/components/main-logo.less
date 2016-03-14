@@ -1,0 +1,78 @@
+@import '../variables.less';
+
+.main-logo{
+
+  &--skew{
+    background-color: #fff;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    margin-left: -12px;
+  }
+  &--skew-backwards{
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+  }
+
+
+  &__link{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:@color__primary;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:@font-size--large;
+    padding:@spacer;
+
+    &:hover,&:visited,&:focus{
+      text-decoration: none;
+      color:@color__primary;
+    }
+
+    &--start{
+      justify-content: flex-start;
+
+      @media (max-width: @screen-md){
+        justify-content: center;;
+      }
+    }
+
+    @media (max-width: @screen-md){
+      font-size:@font-size;
+    }
+  }
+
+  &__image{
+    width:36px;
+    margin-right:@spacer;
+
+    @media (max-width: @screen-md){
+      width:24px;
+      margin-right: @spacer/2;
+    }
+  }
+
+  &__slogan{
+    text-transform: lowercase;
+    font-weight:normal;
+    font-size:@font-size--small;
+
+    @media (max-width: @screen-md){
+      display:none;
+    }
+  }
+
+  @media (max-width: @screen-lg) {
+    margin-left: 15px;
+  }
+  @media (max-width: @screen-md) {
+    margin-left: 0;
+  }
+}

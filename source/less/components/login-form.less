@@ -1,0 +1,34 @@
+@import '../variables.less';
+
+.main-login{
+  .flexible;
+  justify-content: flex-end;
+
+  &__container{
+    display:flex;
+  }
+  &__enter{
+    margin-right:@spacer;
+  }
+  &__register{
+
+  }
+  &__link{
+      .btn-default();
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    margin-bottom: 0;
+
+    & > .fa{
+      margin-right:@spacer/2;
+    }
+  }
+
+  @media (max-width: @screen-md){
+    justify-content: center;
+  }
+}
+

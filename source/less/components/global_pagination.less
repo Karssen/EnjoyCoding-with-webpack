@@ -1,0 +1,48 @@
+@import '../variables.less';
+
+.pagination{
+  list-style:none;
+  display:flex;
+  margin:20px 0;
+  padding: 0;
+  justify-content: center;
+
+  &__item{
+    overflow:hidden;
+
+    &:first-child{
+      border-top-left-radius: @border-radius;
+      border-bottom-left-radius: @border-radius;
+    }
+    &:last-child{
+      border-top-right-radius: @border-radius;
+      border-bottom-right-radius: @border-radius;
+    }
+    &--disabled{
+      cursor: not-allowed;
+      color: @color__gray-lighter;
+      display:block;
+      border:1px solid @color__gray-lighter;
+      padding:@spacer/2 @spacer;
+    }
+  }
+
+  &__link{
+    border:1px solid @color__gray-lighter;
+    display:block;
+    padding:@spacer/2 @spacer;
+    &:hover{
+      background-color:@color__gray-lighter-light;
+    }
+    &--active{
+      background-color:@color__primary;
+      border:1px solid @color__primary;
+      color:#fff;
+      &:hover,&:visited,&:active{
+        background-color:@color__primary;
+        border:1px solid @color__primary;
+        color:#fff;
+      }
+    }
+  }
+}

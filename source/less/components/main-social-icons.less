@@ -1,0 +1,38 @@
+@import '../variables.less';
+
+.social{
+  display:flex;
+  justify-content: center;
+
+  &__container{
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+    flex-basis: 180px;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    .btn();
+    width:55px;
+    height:55px;
+    text-align:center;
+    font-size:@font-size--h2;
+    line-height:44px;
+    //margin-right:@spacer/2;
+
+    &--vk{
+      .btn-vk();
+    }
+    &--facebook{
+      .btn-facebook();
+    }
+    &--twitter{
+      .btn-twitter();
+    }
+  }
+}
+.fa-vk:before{
+  margin-left:-2px;
+}

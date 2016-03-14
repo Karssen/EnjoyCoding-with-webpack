@@ -1,0 +1,90 @@
+@import '../variables.less';
+
+.services{
+  margin-bottom: @spacer;
+  display: flex;
+
+  &__column{
+    display: flex;
+    margin-bottom:@spacer;
+  }
+
+  &__container{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    background-color:@service_bg;
+    padding:@spacer*2;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    box-shadow: none;
+    -webkit-border-radius: @border-radius;
+    -moz-border-radius: @border-radius;
+    border-radius: @border-radius;
+
+    &:hover{
+      box-shadow:0 0 2px 0 @color__primary;
+    }
+
+    &:hover > .services__figure--lessons{
+      background-position:-12px -12px;
+    }
+    &:hover > .services__figure--blog{
+      background-position:-12px -354px;
+    }
+    &:hover > .services__figure--media{
+      background-position:-12px -707px;
+    }
+    &:hover > .services__figure--sources{
+      background-position:-12px -1061px;
+    }
+  }
+  &__figure{
+    width:159px;
+    height:146px;
+    margin:0 auto;
+    background-image: url('../../img/services/spritesheet.png');
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-bottom: @spacer;
+
+    &--lessons{
+      background-position:-12px -181px;
+    }
+    &--blog{
+      background-position:-12px -530px;
+    }
+    &--media{
+      background-position:-12px -886px;
+    }
+    &--sources{
+      background-position:-12px -1225px;
+    }
+  }
+  &__header{
+    color:@header-color--dark;
+    font-size: @font-size--h4;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: @spacer;
+  }
+  &__text{
+    margin-bottom:auto;
+  }
+  &__button{
+    margin-top:auto;
+    align-self: flex-end;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    .btn-primary();
+  }
+}

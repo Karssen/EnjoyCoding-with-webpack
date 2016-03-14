@@ -1,0 +1,36 @@
+@import '../variables.less';
+
+.page-title{
+  width:100%;
+  padding:0;
+  margin-bottom:@spacer*2;
+
+  &__header{
+    .gray-header();
+    padding:@spacer 0;
+    margin:0;
+    background-color:@color__primary;
+  }
+  &__corner{
+    background-color:#fff;
+    padding:3px 50px 3px 50px;
+    position:relative;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+    &:before{
+      content:'';
+      display:block;
+      position:absolute;
+      left:0;
+      top:-1px;
+      width:0;
+      height:0;
+      border:14px solid;
+      border-left-color: @color__primary;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+}

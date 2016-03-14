@@ -1,0 +1,130 @@
+@import '../variables.less';
+
+.information{
+  display:flex;
+  margin-bottom:@spacer*2;
+
+  &--about{
+    flex-direction:column;
+  }
+  &__column{
+    display: flex;
+    margin-bottom:@spacer;
+  }
+  &__container{
+    padding: @spacer*2;
+    color:#fff;
+    background-color: @color__primary;
+    -webkit-border-radius: @border-radius*2;
+    -moz-border-radius: @border-radius*2;
+    border-radius: @border-radius*2;
+    flex-basis: 100%;
+    -webkit-box-shadow: 0 1px 4px #000;
+    -moz-box-shadow: 0 1px 4px #000;
+    box-shadow: 0 1px 4px #000;
+
+    &--about{
+      margin-bottom:@spacer*2;
+      margin-right:75px;
+      position: relative;
+      padding: 50px 85px 20px 20px;
+      color: #fff;
+
+      &:last-child{
+        margin-bottom:0;
+      }
+    }
+  }
+  &__header{
+    font-size: @font-size--h3;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &--about{
+      position: absolute;
+      top: 3px;
+      left: -7px;
+      color: #514b4b;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 10px 30px;
+      font-size: 14px;
+      font-weight: bold;
+      background-image: url(../../img/headers/torn-paper.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 23%;
+      transform: rotate(2deg);
+      -webkit-box-shadow: 1px -3px 5px -4px #000;
+      -moz-box-shadow: 1px -3px 5px -4px #000;
+      box-shadow: 1px -3px 5px -4px #000;
+    }
+  }
+  &__logo{
+    background-color:#fff;
+    float:right;
+    padding:@spacer*3;
+    margin-top:-50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    &--about{
+      width: 150px;
+      height: 150px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      right: -75px;
+      margin-top: -75px;
+      -webkit-box-shadow: 0 0 2px #666;
+      -moz-box-shadow: 0 0 2px #666;
+      box-shadow: 0 0 2px #666;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: flex;
+      overflow: hidden;
+    }
+  }
+  &__image{
+    width:50px;
+
+    &--about-small{
+      width:75px;
+      margin:auto;
+    }
+  }
+  &__list{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  &__item{
+    border-bottom:1px dashed #fff;
+    margin-bottom:@spacer;
+    display:flex;
+    align-items: center;
+    padding:@spacer/2 0;
+
+    &-link{
+      color:#fff;
+      text-decoration:none;
+      -webkit-transition: all 0.6s;
+      -moz-transition: all 0.6s;
+      -ms-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+
+      &:hover{
+        text-decoration:none;
+        color:@color__gray-lighter;
+      }
+    }
+    &-date{
+      margin-right:@spacer;
+      color:@color__gray-lighter;
+      width:100px;
+    }
+  }
+}

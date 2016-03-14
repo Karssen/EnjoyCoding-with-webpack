@@ -1,0 +1,23 @@
+@import '../variables.less';
+
+.options{
+
+  &__column{
+    margin-bottom:@spacer;
+  }
+  &__container{
+    background-image: linear-gradient(180deg,@color__gray-lighter-light 0%, #fff 100%);
+    padding:@spacer*2;
+    -webkit-border-radius: @border-radius*2;
+    -moz-border-radius: @border-radius*2;
+    border-radius: @border-radius*2;
+    -webkit-box-shadow: 0 0 5px @color__gray-light;
+    -moz-box-shadow: 0 0 5px @color__gray-light;
+    box-shadow: 0 0 5px @color__gray-light;
+  }
+  &__header{
+    text-align:center;
+    margin:0 0 @spacer 0;
+    .gray-header();
+  }
+}

@@ -1,0 +1,19 @@
+@import '../variables.less';
+
+.breadcrumb{
+  list-style: none;
+  display:flex;
+  font-size: @font-size--middle;
+  background-color:#f5f5f5;
+  padding:@spacer @spacer*2;
+  color:@color__gray-light;
+
+  &__item{
+
+    &:not(:first-child):before{
+      content:'/';
+      display:inline-block;
+      margin:0 @spacer;
+    }
+  }
+}
